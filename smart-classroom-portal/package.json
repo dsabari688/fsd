@@ -1,0 +1,19 @@
+{
+  "name": "smart-classroom-portal-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Smart Classroom & Attendance Analytics Portal",
+  "scripts": {
+    "dev": "npx concurrently -n \"backend,frontend,ai\" -c \"blue,green,magenta\" \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:ai\"",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:ai": "python ai-engine/ai_vision_server.py",
+    "start:backend": "npm start --prefix backend",
+    "start:frontend": "npm run dev --prefix frontend",
+    "start:ai": "python ai-engine/ai_vision_server.py"
+  },
+  "devDependencies": {
+    "canvas": "^3.2.3",
+    "pptxgenjs": "^4.0.1"
+  }
+}

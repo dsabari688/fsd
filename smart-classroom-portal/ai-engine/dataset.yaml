@@ -1,0 +1,13 @@
+# Ultralytics YOLOv8 Behavior Dataset Configuration
+path: D:/smaart class room/smart-classroom-portal/ai-engine/dataset
+train: images/train
+val: images/val
+
+nc: 6
+names:
+  0: studying
+  1: sleeping
+  2: speaking
+  3: phone_use
+  4: raising_hand
+  5: distracted
